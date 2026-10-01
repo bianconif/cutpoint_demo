@@ -29,7 +29,7 @@ for combination in combinations:
     
     cutpoints, cutpoints_idxs, thresholds, accs, ses, sps, aucs_train,\
         aucs_test, performance_train, performance_test,\
-        performance_whole = cpcalc.bootstrap(
+        performance_whole = cpcalc.validate(
             features=df.Glucose, labels=df.Outcome
         )
     

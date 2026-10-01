@@ -32,7 +32,7 @@ for combination in combinations:
     
     cutpoints, cutpoints_idxs, thresholds, accs, ses, sps, aucs_train,\
         aucs_test, performance_train, performance_test,\
-        performance_whole = cpcalc.bootstrap(features, labels)
+        performance_whole = cpcalc.validate(features, labels)
     
     #=============================================================
     #===== Pack results info dataframes and show the results =====
